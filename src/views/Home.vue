@@ -1,18 +1,40 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <div class='main-container'>
+    <div class="search">
+      <form class="pure-form">
+        <i class="fas fa-search"></i><input v-model="searchText" />
+      </form>
+    </div>
   </div>
+  <InfoList :items="items" />
+  <div class='footer'>
+    <div class='footer-content'>
+      <p>Pair Programmed by Jaxson Ruff and Riley Ross</p>
+      <a class='footer-link' href='https://github.com/ruffjaxson/CP2'>GitHub Repository</a>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import InfoList from "../components/InfoList.vue"
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
+    InfoList
+  },
+  data() {
+    return {
+      searchText: '',
+    }
+  },
+  computed: {
+    items() {
+      return this.$root.$data.items.filter(item => item.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
+    }
+  },
 }
 </script>
