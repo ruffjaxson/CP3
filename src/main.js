@@ -6,10 +6,7 @@ import mock from './mock-data.js'
 // Vue.config.productionTip = false
 let data = {
   items: mock,
-  comments: {},
-  addedName: '',
-  addedComment: '',
-  today: '',
+  
 }
 
 new Vue({

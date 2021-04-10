@@ -1,8 +1,13 @@
 <template>
 <div>
   <div class='main-container'>
+    <h1>Find your character</h1>
+    <div class="search">
+      <form class="pure-form">
+        <i class="fas fa-search"></i><input v-model="searchText" placeholder="Narrow your search" style="width:400px;"/>
+      </form>
+    </div>
   </div>
-  <h1>Starting 11</h1>
   <InfoList :items="items" />
   <div class='footer'>
     <div class='footer-content'>
@@ -34,3 +39,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+
+.search {
+  margin-top: 30px;
+}
+
+</style>

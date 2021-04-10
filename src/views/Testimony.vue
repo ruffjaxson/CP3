@@ -4,14 +4,8 @@
     <h1>Sequels vs Prequels?</h1>
     <h2>Enter your argument here</h2>
 
-    <h3>Add a Comment</h3>
-        <form v-on:submit.prevent="addComment">
-          <input v-model="addedName" placeholder="Name">
-          <br/>
-          <textarea v-model="addedComment"></textarea>
-          <br />
-          <button type="submit">Comment</button>
-        </form>
+
+
 
   </div>
 
@@ -26,28 +20,5 @@
 
 <script>
 
-export default {
-  name: 'Testimony',
-  components: {
-
-  },
-  data() {
-    return {
-    }
-  },
-  methods: {
-    addComment() {
-      if (!(this.number in this.comments))
-        Vue.set(app.comments, this.number, new Array);
-      this.comments[this.number].push({
-        author: this.addedName,
-        text: this.addedComment,
-        today: new Date().toLocaleString()
-      });
-      this.addedName = '';
-      this.addedComment = '';
-    }
-  },
-}
 
 </script>
