@@ -8,15 +8,10 @@
         <p>{{item.mass}}</p>
         <p>{{item.gender}}</p>
         <p>{{item.image}}</p>
-      </div>
-      <div class="image">
-        <!-- <img v-bind:src="'/images/items/'+item.image">
-        <img :src="'/images/items/'+item.image"> -->
-
-      </div>
-      <div class="price">
-        <!-- <h2>{{product.price}}</h2> -->
-        <!-- <button class="auto" @click="addToCart(product)" >Add to Cart</button> -->
+        <!-- <p>This is where the photo should go:</p> -->
+        <div class="image">
+          <img :src="'/images/items/'+item.image">
+        </div>
       </div>
     </div>
   </div>
