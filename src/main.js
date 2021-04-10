@@ -7,6 +7,9 @@ import mock from './mock-data.js'
 let data = {
   items: mock,
   comments: {},
+  addedName: '',
+  addedComment: '',
+  today: '',
 }
 
 new Vue({

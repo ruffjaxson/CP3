@@ -12,7 +12,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/Testimony.vue',
+    path: '/testimony',
     name: 'Testimony',
     component: Testimony
   }
