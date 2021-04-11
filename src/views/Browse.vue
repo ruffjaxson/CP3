@@ -9,12 +9,6 @@
     </div>
   </div>
   <InfoList :items="items" />
-  <div class='footer'>
-    <div class='footer-content'>
-      <p>Pair Programmed by Jaxson Ruff and Riley Ross</p>
-      <a class='footer-link' href='https://github.com/ruffjaxson/CP2'>GitHub Repository</a>
-    </div>
-  </div>
 </div>
 </template>
 

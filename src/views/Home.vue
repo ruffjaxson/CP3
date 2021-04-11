@@ -2,14 +2,9 @@
 <div>
   <div class='main-container'>
   </div>
-  <h1>Starting 11</h1>
+  <div class='home-title'> <h1>Roster</h1></div>
   <InfoList :items="items" />
-  <div class='footer'>
-    <div class='footer-content'>
-      <p>Pair Programmed by Jaxson Ruff and Riley Ross</p>
-      <a class='footer-link' href='https://github.com/ruffjaxson/CP2'>GitHub Repository</a>
-    </div>
-  </div>
+
 </div>
 </template>
 
@@ -34,3 +29,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+
+.home-title {
+  margin-top: 50px;
+}
+
+</style>
